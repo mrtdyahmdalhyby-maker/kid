@@ -1,0 +1,66 @@
+here<!DOCTYPE html>
+<html dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>تحبيني لو لا؟</title>
+
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#fde8ef;
+    font-family:Arial;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.1);
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    margin:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#yes{
+    background:#ff4f8b;
+    color:white;
+}
+
+#no{
+    background:#ddd;
+    position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>كيدي تحبيني لو لا؟ ❤️</h2>
+
+    <button id="yes" onclick="alert('كنت أدري 😍❤️')">إي</button>
+
+    <button id="no">لا</button>
+</div>
+
+<script>
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover", () => {
+    noBtn.style.left = Math.random() * 80 + "%";
+    noBtn.style.top = Math.random() * 80 + "%";
+});
+</script>
+
+</body>
+</html>
